@@ -15,7 +15,7 @@ app.post('',async(req,res)=>{
 res.send('hellow ');
 });
 
-app.delete('/:_id',async(req,res)=>{
+app.delete('/:item_name',async(req,res)=>{
 console.log(req.params);
     let data=await product.deleteOne(req.params)
 res.send(data);
